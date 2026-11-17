@@ -26,8 +26,8 @@ jobs:
       - name: Preparar arquivos públicos
         run: |
           mkdir -p _site
-          cp index.html styles.css app.js _site/
-          cp -R assets _site/assets
+          cp index.html hero-poster.jpg hero.mp4 .nojekyll _site/
+          cp -R fonts _site/fonts
       - name: Configurar Pages
         uses: actions/configure-pages@v5
       - name: Enviar site
